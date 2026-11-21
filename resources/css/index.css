@@ -1,0 +1,237 @@
+header {
+        background-color: #333;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 12px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-family: sans-serif;
+    }
+    header a {
+        color: white;
+        text-decoration: none;
+    }
+    header a:hover {
+        color: black;
+    }
+    header .user-name {
+    margin-left: 20px;
+    color: white;
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+header .logout-form {
+    display: inline;
+    margin-left: 15px;
+}
+
+header .btn-logout {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+header .auth-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Стили для контейнеров авторизации (в стиле ваших категорий игр) */
+.auth-container {
+    max-width: 700px;
+    width: 100%;
+    margin: 120px auto 40px auto; /* Сверху 120px, чтобы форма не заезжала под фиксированный хедер */
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #cbd5e1;
+    font-family: sans-serif;
+}
+
+.auth-container h1 {
+    color: #1e293b;
+    margin-top: 0;
+    font-size: 28px;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.auth-form input {
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+}
+
+.auth-form input:focus {
+    border-color: #333;
+}
+
+.btn-submit {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.btn-submit:hover {
+    background: black;
+}
+
+.auth-error {
+    color: #ef4444;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main{
+            flex: 1;
+            padding-top: 160px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+
+
+footer {
+        background-color: #333;
+        width: 100%;
+        padding: 12 px 0;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        font-size: 24px;
+        color: white;
+        font-family: sans-serif;
+        box-sizing: border-box;
+        margin-top: auto;
+    }
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+    padding-top: 160px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #121212 !important; 
+    color: #e0e0e0 !important;
+}
+
+header, footer {
+    background-color: #5c0000 !important; 
+    color: #ffffff !important;
+}
+
+header a, footer div {
+    color: #ffb3b3 !important; 
+}
+header a:hover {
+    color: #ffffff !important;
+}
+
+article, main > div, form, 
+main[style*="background: #ffffff"], 
+div[style*="background: #ffffff"] {
+    background-color: #1e1e1e !important; 
+    border-color: #333333 !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6) !important;
+}
+
+h1, h2, h3, p, span, label, div {
+    color: #e0e0e0 !important;
+}
+
+input, textarea, select {
+    background-color: #2a2a2a !important;
+    border-color: #444444 !important;
+    color: #ffffff !important;
+}
+
+span[style*="background: #eff6ff"] {
+    background-color: #311b92 !important; 
+    color: #d1c4e9 !important; 
+}
+
+span[style*="background: #fee2e2"] { color: #991b1b !important; }
+span[style*="background: #e0f2fe"] { color: #0369a1 !important; }
+span[style*="background: #f1f5f9"] { color: #475569 !important; }
+
+main a[href^="/category/"] {
+    background-color: #1e1e1e !important; 
+    border-color: #444444 !important;
+}
+main a[href^="/category/"] span {
+    color: #e0e0e0 !important; 
+}
+
+button[style*="background: #fef2f2"] {
+    background-color: #3f1a1a !important;
+    color: #fca5a5 !important;
+    border-color: #5c0000 !important;
+}
+.logout-form, .btn-logout {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.btn-logout {
+    color: #ffb3b3 !important; 
+    font-size: 16px !important;
+    font-weight: bold !important;
+    font-family: inherit !important;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.btn-logout:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
